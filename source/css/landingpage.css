@@ -9,11 +9,11 @@
 .logo-container {
     display: flex;
     align-items: center;
-    
 }
 
 .logo-img {
-    height: 50px; /* Ajusta la altura de la imagen si es necesario */
+    height: 50px;
+    /* Ajusta la altura de la imagen si es necesario */
     width: auto;
     display: block;
 }
@@ -21,13 +21,15 @@
 .logo-text {
     font-size: 1.7rem;
     font-weight: 700;
-    color: var(--f-verde); /* "TIC" en Verde */
+    color: var(--f-verde);
+    /* "Forma" en Verde */
     line-height: 1;
     transform: translateY(6px);
 }
 
 .logo-highlight {
-    color: var(--f-azul); /* "TIC" en Azul */
+    color: var(--f-azul);
+    /* "TIC" en Azul */
 }
 
 /* --- /Header --- */
@@ -38,7 +40,8 @@
     justify-content: space-between;
     padding: 4rem 8%;
     gap: 3rem;
-    min-height: calc(100vh - 70px); /* Ocupa el alto de pantalla disponible */
+    min-height: calc(100vh - 70px);
+    /* Ocupa el alto de pantalla disponible */
 }
 
 .hero-content {
@@ -75,7 +78,7 @@
     background-color: var(--f-verde);
     color: #ffffff;
     padding: 0.8rem 1.8rem;
-    border-radius: 8px;
+    border-radius: 2px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
@@ -84,7 +87,8 @@
 }
 
 .btn-primary:hover {
-    background-color: #2e8800; /* Un verde un poco más oscuro al dar hover */
+    background-color: #2e8800;
+    /* Un verde un poco más oscuro al dar hover */
     transform: translateY(-2px);
 }
 
@@ -92,7 +96,7 @@
     color: var(--f-azul);
     border: 2px solid var(--f-azul);
     padding: 0.75rem 1.6rem;
-    border-radius: 8px;
+    border-radius: 2px;
     text-decoration: none;
     font-weight: 600;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -115,4 +119,174 @@
     width: 100%;
     max-width: 480px;
     height: auto;
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 5%;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        margin-top: 2rem;
+    }
+}
+
+/* --- Footer --- */
+footer {
+    background: linear-gradient(135deg, #3aaa00 0%, #2d8a00 100%);
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 2.5rem 2rem;
+}
+
+.footer-text h1 {
+    margin: 0 0 0.25rem;
+    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer-text h2 {
+    margin: 0;
+    font-size: clamp(1.1rem, 1vw, 1.2rem);
+    font-weight: 600;
+    color: #d9ffc2;
+}
+
+.footer-button {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    border-radius: 4px;
+    background: #fff;
+    color: var(--f-verde);
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.footer-button a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+}
+
+.footer-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.team-title {
+    padding: 1rem 2rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.team-title p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Footer: columnas de enlaces */
+.link-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 2.5rem 2rem;
+    color: #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-logo .accent {
+    color: #d9ffc2;
+}
+
+.footer-about {
+    max-width: 380px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.footer-title {
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer-list {
+    list-style: none;
+}
+
+.footer-list li {
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.footer-list a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-list a:hover {
+    color: #fff;
+}
+
+.footer-contact i {
+    width: 1.8rem;
+    color: #d9ffc2;
+}
+
+.footer-contact a.accent {
+    color: #d9ffc2;
+}
+
+@media (max-width: 600px) {
+    .footer-button {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .link-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 1.5rem;
+        text-align: center;
+    }
+
+    .footer-about {
+        margin: 0 auto;
+    }
 }
