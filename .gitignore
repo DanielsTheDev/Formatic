@@ -1,0 +1,18 @@
+# Visual Studio y editores
+.vs/
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Claves y configuración privada
+.env
+.env.*
+!.env.example
+
+# Archivos que suben los usuarios
+uploads/
